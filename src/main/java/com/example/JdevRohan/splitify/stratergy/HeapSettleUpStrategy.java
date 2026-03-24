@@ -2,12 +2,14 @@ package com.example.JdevRohan.splitify.stratergy;
 
 import com.example.JdevRohan.splitify.models.Expense;
 import com.example.JdevRohan.splitify.models.ExpenseType;
+import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.PriorityQueue;
 
+@Component
 public class HeapSettleUpStrategy implements SettleUpStrategy{
     @Override
     public List<Expense> settleUp(List<Expense> expenses) {
